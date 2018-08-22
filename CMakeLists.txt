@@ -13,7 +13,7 @@ endif()
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-file(GLOB_RECURSE SRCS src/*.cpp)
+file(GLOB_RECURSE SRCS src/*.cpp src/*.c)
 add_executable(server ${SRCS})
 set_target_properties(server PROPERTIES OUTPUT_NAME server)
 
